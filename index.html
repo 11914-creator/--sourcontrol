@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f2ff">
+  <title>ประวัติส่วนตัว | รัตติกาล ชัยภูมิ</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Noto Sans Thai", "Leelawadee UI", Tahoma, sans-serif;
+      color: #292541;
+      background: #f5f2ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        radial-gradient(circle at 15% 15%, #e8e0ff 0, transparent 30%),
+        radial-gradient(circle at 85% 85%, #fce8ef 0, transparent 28%),
+        #f8f7fc;
+    }
+
+    .profile-card {
+      width: min(100%, 520px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.94);
+      box-shadow: 0 24px 70px rgba(58, 44, 99, 0.12);
+    }
+
+    .card-header {
+      position: relative;
+      display: grid;
+      min-height: 190px;
+      place-items: center;
+      overflow: hidden;
+      background: linear-gradient(135deg, #7764c8, #a18add);
+    }
+
+    .card-header::before,
+    .card-header::after {
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .card-header::before {
+      top: -105px;
+      left: -45px;
+    }
+
+    .card-header::after {
+      right: -55px;
+      bottom: -125px;
+      width: 240px;
+      height: 240px;
+    }
+
+    .avatar {
+      z-index: 1;
+      display: grid;
+      width: 112px;
+      height: 112px;
+      place-items: center;
+      border: 5px solid rgba(255, 255, 255, 0.85);
+      border-radius: 50%;
+      background: #fff;
+      color: #7764c8;
+      font-size: 2.5rem;
+      font-weight: 700;
+      box-shadow: 0 10px 24px rgba(48, 34, 91, 0.18);
+    }
+
+    .card-content {
+      padding: 32px clamp(22px, 7vw, 42px) 38px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: #8279a2;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+    }
+
+    h1 {
+      margin: 0;
+      color: #30294b;
+      font-size: clamp(1.65rem, 6vw, 2rem);
+      line-height: 1.5;
+    }
+
+    .intro {
+      margin: 10px 0 28px;
+      color: #77738a;
+      line-height: 1.8;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin: 0;
+      text-align: left;
+    }
+
+    .detail {
+      padding: 17px 18px;
+      border: 1px solid #eeebf7;
+      border-radius: 18px;
+      background: #faf9fd;
+    }
+
+    .detail dt {
+      margin-bottom: 5px;
+      color: #89849c;
+      font-size: 0.83rem;
+    }
+
+    .detail dd {
+      margin: 0;
+      color: #40385f;
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    .card-footer {
+      margin: 28px 0 0;
+      color: #a09bae;
+      font-size: 0.84rem;
+    }
+
+    @media (max-width: 380px) {
+      body {
+        padding: 14px;
+      }
+
+      .details {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="profile-card">
+    <header class="card-header" aria-label="ภาพตกแต่งส่วนหัว">
+      <div class="avatar" aria-hidden="true">ร</div>
+    </header>
+
+    <section class="card-content" aria-labelledby="profile-name">
+      <p class="eyebrow">ประวัติส่วนตัว</p>
+      <h1 id="profile-name">รัตติกาล ชัยภูมิ</h1>
+      <p class="intro">ยินดีต้อนรับสู่หน้าแนะนำประวัติส่วนตัว</p>
+
+      <dl class="details">
+        <div class="detail">
+          <dt>ระดับชั้น</dt>
+          <dd>มัธยมศึกษาปีที่ 6</dd>
+        </div>
+        <div class="detail">
+          <dt>อายุ</dt>
+          <dd>18 ปี</dd>
+        </div>
+      </dl>
+
+      <p class="card-footer">ขอบคุณที่แวะมาทำความรู้จักกัน</p>
+    </section>
+  </main>
+</body>
+</html>
